@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="./style.css" />
   <title>Bonna || Flood</title>
+  <link rel="shortcut icon" href="/icons/donate.jpg" type="image/x-icon">
 </head>
 
 <body>
@@ -44,9 +45,11 @@
         </ul>
         <input
           class="taka-input"
+          min="0"
           type="number"
           name="Taka"
-          placeholder="Other Amount (Taka)" />
+          placeholder="Other Amount (Taka)"
+          onchange="validate()" />
         <a
           class="donate-btn"
           href="https://github.com/Md-Neamul-Hoqe/developer-portfolio">Donate Now</a>

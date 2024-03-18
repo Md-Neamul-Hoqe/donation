@@ -10,3 +10,13 @@ const handleActiveAmount = () => {
     const toBeActiveAnchorClasses = thisNode.classList
     toBeActiveAnchorClasses.value += ' active';
 }
+
+const validate = () => {
+    console.log(event.target.value);
+    const amount = event.target;
+
+    if (amount.value < 0) {
+        amount.value = 0;
+        return alert('Please give a valid amount.')
+    }
+}
